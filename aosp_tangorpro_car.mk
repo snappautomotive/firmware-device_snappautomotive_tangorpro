@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, device/google_car/common/pre_google_car.mk)
-$(call inherit-product, device/google_car/tangorpro_car/device-tangorpro-car.mk)
+$(call inherit-product, device/snappautomotive/tangorpro_car/device-tangorpro-car.mk)
 $(call inherit-product-if-exists, vendor/google_devices/tangorpro/proprietary/device-vendor.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
