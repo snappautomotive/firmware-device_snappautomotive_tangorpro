@@ -14,11 +14,10 @@
 # limitations under the License.
 #
 
-PHONE_CAR_BOARD_PRODUCT := tangorpro_car
+$(call inherit-product, device/google_car/tangorpro_car/aosp_tangorpro_car)
 
-$(call inherit-product, packages/services/Car/car_product/build/car.mk)
-
-$(call inherit-product, device/google/tangorpro/device-tangorpro.mk)
-
-PRODUCT_PRODUCT_PROPERTIES+= \
-    ro.adb.secure=0
+PRODUCT_MANUFACTURER := Google
+PRODUCT_BRAND := Android
+PRODUCT_NAME := aosp_tangorpro_car
+PRODUCT_DEVICE := tangorpro
+PRODUCT_MODEL := AOSP on tangorpro
